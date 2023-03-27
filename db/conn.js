@@ -1,0 +1,5 @@
+const mongoose=require('mongoose');
+
+mongoose.connect("mongodb://0.0.0.0:27017/postMan").then(()=>console.log('connection done')).catch(()=>{
+    console.log('connection not done');
+})
